@@ -23,9 +23,6 @@ from util import base64_to_pil
 app = Flask(__name__)
 
 
-# You can use pretrained model from Keras
-# Check https://keras.io/applications/
-# or https://www.tensorflow.org/api_docs/python/tf/keras/applications
 
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2
 model = MobileNetV2(weights='imagenet')
